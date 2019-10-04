@@ -2,39 +2,34 @@
   <div class="container">
     <div>
       <logo />
+      <img src="~/assets/img/tanshi_dengen_plug_3p.png" />
+      <img :src="commonImg" />
       <h1 class="title">
-        nuxt-mono-test
+        SSR
       </h1>
-      <h2 class="subtitle">
-        My geometric Nuxt.js project
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Logo from '~~~/components/Logo.vue'
 
 export default {
   components: {
     Logo
+  },
+  computed: {
+    commonImg() {
+      return require('~~~/assets/img/science_milk_ramsden.png')
+    }
   }
 }
 </script>
 
 <style>
+img {
+  width: 200px;
+}
 .container {
   margin: 0 auto;
   min-height: 100vh;

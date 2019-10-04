@@ -1,3 +1,5 @@
+import path from 'path'
+
 export default {
   mode: 'universal',
   server: {
@@ -50,6 +52,8 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {
+      config.resolve.alias['~~~'] = path.resolve('../common/src')
+    }
   }
 }

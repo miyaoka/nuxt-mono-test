@@ -6,7 +6,7 @@
       <div class="Triangle Triangle--three" />
       <div class="Triangle Triangle--four" />
     </div>
-    <p>bbbbbbbbbbb</p>
+    <slot />
     <Test text="aaaaa"></Test>
   </div>
 </template>
