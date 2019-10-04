@@ -1,11 +1,25 @@
 <template>
-  <div class="VueToNuxtLogo">
-    <div class="Triangle Triangle--two" />
-    <div class="Triangle Triangle--one" />
-    <div class="Triangle Triangle--three" />
-    <div class="Triangle Triangle--four" />
+  <div>
+    <div class="VueToNuxtLogo">
+      <div class="Triangle Triangle--two" />
+      <div class="Triangle Triangle--one" />
+      <div class="Triangle Triangle--three" />
+      <div class="Triangle Triangle--four" />
+    </div>
+    <p>bbbbbbbbbbb</p>
+    <Test text="aaaaa"></Test>
   </div>
 </template>
+
+<script>
+import Test from './Test.vue'
+
+export default {
+  components: {
+    Test
+  }
+}
+</script>
 
 <style>
 .VueToNuxtLogo {
