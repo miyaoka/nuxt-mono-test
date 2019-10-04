@@ -4,7 +4,10 @@
   "description": "My geometric Nuxt.js project",
   "author": "Masaya Kazama",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "dev": "lerna exec -- yarn dev",
+    "dev2": "lerna run --stream dev"
+  },
   "lint-staged": {
     "*.{js,vue}": "eslint"
   },
