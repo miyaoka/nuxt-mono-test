@@ -1,5 +1,8 @@
 <template>
-  <div class="text">{{ text }}</div>
+  <div>
+    <div class="text">{{ text }}</div>
+    <img :src="commonImg" />
+  </div>
 </template>
 
 <script>
@@ -8,6 +11,11 @@ export default {
     text: {
       type: String,
       default: ''
+    }
+  },
+  computed: {
+    commonImg() {
+      return require('~~~/assets/img/food_gohan.png')
     }
   }
 }
